@@ -7,7 +7,7 @@ MR Exporter is a Python script that fetches merge requests from GitLab and posts
 - Python 3.12 or higher
 - [Poetry](https://python-poetry.org/) for dependency management
 - A Sheety account
-- A Google Sheet with a tab named in the format `MM.YYYY` (e.g., `11.2023`)
+- A Google Sheet with a tab named in the format `MM.YYYY` (e.g., `11.2023`) and headers: `giturl`, `date`, `title`
 - Refresh the project in Sheety after creating the tab
 
 ## Installation
