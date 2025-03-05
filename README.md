@@ -1,6 +1,6 @@
 # MR Exporter
 
-MR Exporter is a Python script that fetches merge requests from GitLab and posts them to a Google Sheet using Sheety.
+MR Exporter is a Python script that fetches merge requests from GitLab from the last 30 days and posts them to a Google Sheet using Sheety.
 
 ## Prerequisites
 
