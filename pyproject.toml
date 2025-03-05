@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mr-exporter"
+version = "0.1.0"
+description = ""
+authors = ["Monika Derewecka <monika.derewecka@schibsted.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+google = "^3.0.0"
+build = "^1.2.2.post1"
+python-dotenv = "^1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
