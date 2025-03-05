@@ -8,7 +8,6 @@ MR Exporter is a Python script that fetches merge requests from GitLab from the 
 - [Poetry](https://python-poetry.org/) for dependency management
 - A Sheety account (https://sheety.co/)
 - A Google Sheet with a tab named in the format `MM.YYYY` (e.g., `11.2023`) and headers: `giturl`, `date`, `title`
-- Refresh the project in Sheety after creating the tab
 
 ## Installation
 
@@ -30,6 +29,8 @@ MR Exporter is a Python script that fetches merge requests from GitLab from the 
     GITLAB_PRIVATE_TOKEN=your-gitlab-private-token
     SHEETY_BEARER_TOKEN=your-sheety-bearer-token
     AUTHOR_USERNAME=your-gitlab-username
+    GOOGLE_SHEET_URL=https://docs.google.com/spreadsheets/d/your-google-sheet-id
+    SHEETY_DASHBOARD_URL=https://dashboard.sheety.co/projects/your-sheety-project-id
     ```
 
 ## Usage
@@ -51,3 +52,5 @@ MR Exporter is a Python script that fetches merge requests from GitLab from the 
 - **GITLAB_PRIVATE_TOKEN**: Your private token for GitLab API authentication.
 - **SHEETY_BEARER_TOKEN**: Your bearer token for Sheety API authentication.
 - **AUTHOR_USERNAME**: The GitLab username for which to fetch merge requests.
+- **GOOGLE_SHEET_URL**: The URL of the Google Sheet.
+- **SHEETY_DASHBOARD_URL**: The URL of the Sheety dashboard.
