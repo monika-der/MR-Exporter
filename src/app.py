@@ -7,6 +7,7 @@ from utils import run_script
 
 load_dotenv()
 
+
 class App(QWidget):
     def __init__(self):
         super().__init__()
@@ -19,8 +20,9 @@ class App(QWidget):
         layout = QVBoxLayout()
 
         instructions = QLabel(
-            "1. Create a <a href='{}'>Google Sheet</a> with a tab named in the format `MM.YYYY` (e.g., `11.2023`) "
-            "and headers: `giturl`, `date`, `title`.<br><br>"
+            "1. Create a new tab in your <a href='{}'>Google Sheet</a> royalities named in the format MM.YYYY ("
+            "e.g., '11.2023') "
+            "and with headers: 'giturl', 'date', 'title'.<br><br>"
             "2. Refresh the project in <a href='{}'>Sheety</a> after creating the tab.<br><br>"
             "3. Press 'Run Script' to execute the code.".format(
                 os.getenv("GOOGLE_SHEET_URL"), os.getenv("SHEETY_DASHBOARD_URL")
